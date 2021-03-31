@@ -171,6 +171,7 @@ header {
   grid-template-columns: 300px 300px 300px;
   -ms-grid-rows: 300px 300px 300px;
   grid-template-rows: 300px 300px 300px;
+  padding: 20px;
 }
 
 .grid > *:nth-child(1) {
