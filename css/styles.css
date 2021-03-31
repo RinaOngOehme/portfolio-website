@@ -133,8 +133,28 @@ header {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px 300px;
+}
+
+.cell-A {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.cell-B {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.cell-C {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.cell-D {
+  grid-column: 3;
+  grid-row: 3;
 }
 
 /* start grid fallback */
