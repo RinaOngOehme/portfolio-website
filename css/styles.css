@@ -161,8 +161,10 @@ header {
 /* start grid fallback */
 .grid__item {
   background-color: var(--lgrey);
-  display: inline-block;
-  width: 33%;
+  width: auto;
+  min-height: auto;
+  margin: 0;
+  padding: 15px;
 }
 
 /* end grid fallback */
