@@ -5,20 +5,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rina Ong-Oehme - Work</title>
-  <link rel="shortcut icon" href="img/favicon2.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&display=swap" rel="stylesheet">
+  <!--<link rel="stylesheet" type="text/css" href="css/styles.css">-->
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
 
 <body>
   <div>
     <header class="page-header">
-      <!-- Add your logo here -->
-      <img src="img/rinaongoehme_logo.svg" alt="Personal logo of Rina Ong-Oehme,
+      <!-- Personal Logo -->
+      <img src="img/rinaongoehme_logo.png" alt="Personal logo of Rina Ong-Oehme,
       a text logo in uppercase and lowercase letters that consists of my name" width="200" height="65"
         class="page-header__item">
+      <!-- Navbar -->
       <div class="navigation__menu">
         <nav class="main-navigation page-header__item">
           <ul role="menubar" class="navigation-list">
@@ -44,7 +46,24 @@
     <div class="work__header">
       <h1>Work</h1>
     </div>
+    <p class="work__description">Here are some of my completed projects hosted on Github.</p>
+    <!--Projects from Github-->
     <div class="grid">
+      <div class="grid__item">
+        <h2>My Portfolio</h2>
+        <img src="img/myportfolio.png" class="work__portfolio" alt="portfolio_pic">
+        <p>
+          A small web application (Pokedex) that is meant to load data from an external Application Programming
+          Interface (API) that enables user to view the details of the individual Pokemon (name, image and height) upon
+          click.
+          <a href="https://github.com/RinaOngOehme/portfolio-website" target="_blank" class="work__ref">See project on
+            GitHub</a>
+        </p>
+        <a href="https://rinaongoehme.github.io/portfolio-website/" target="_blank" class="work__ref">See project Live
+          in Production</a>
+        <p> </p>
+
+      </div>
       <div class="grid__item">
         <h2>Pokedex App</h2>
         <img src="img/pokedex_app.png" class="work__pokedex" alt="pokedex_pic">
@@ -52,69 +71,120 @@
           A small web application (Pokedex) that is meant to load data from an external Application Programming
           Interface (API) that enables user to view the details of the individual Pokemon (name, image and height) upon
           click.
+          <a href="https://github.com/RinaOngOehme/First-JS-App" target="_blank" class="work__ref">See project on
+            GitHub</a>
         </p>
-        <a href="https://github.com/RinaOngOehme/First-JS-App">See project on GitHub</a>
+        <a href="https://rinaongoehme.github.io/First-JS-App/" target="_blank" class="work__ref">See project Live in
+          Production</a>
+        <p> </p>
+
       </div>
       <div class="grid__item">
         <h2>To-Do-List App</h2>
         <img src="img/to_do_list_app.png" class="work__todolist" alt="todolist_pic">
         <p>
           A small to-do-list application that allows user to add, cross out and delete items.
+          <a href="https://github.com/RinaOngOehme/to-do-list-app" target="_blank" class="work__ref">See project on
+            GitHub</a>
         </p>
-        <a href="https://github.com/RinaOngOehme/to-do-list-app">See project on GitHub</a>
+        <a href="https://rinaongoehme.github.io/to-do-list-app/" target="_blank" class="work__ref">See project Live in
+          Production</a>
+        <p> </p>
+
       </div>
       <div class="grid__item">
-        <h2>MyFlix App</h2>
-        <img src="img/myflix-movies.png" class="work__myflix" alt="myflix_pic">
+        <h2>MyFlix (server-side) App</h2>
+        <img src="img/myFlix-server.png" class="work__myflixserver" alt="myflixserver_pic">
         <p>
-          A server-side component of a "movies" web application. The web application will provide users with access to
-          information about different movies, directors and genres. Users will be able to sign up, update their personal
-          information and also create a list of their favorite movies securely.
+          A server-side component of a "movies" web application. This project was deployed to Heroku using MongoDb
+          database to store all the movies and users information.
+          <a href="https://github.com/RinaOngOehme/myFlix-client/tree/myFlix-TEST" target="_blank" class="work__ref">
+            See
+            project on
+            GitHub</a>
         </p>
-        <a href="https://github.com/RinaOngOehme/myFlix-client/tree/myFlix-TEST">See project on GitHub</a>
+
+      </div>
+
+      <div class="grid__item">
+        <h2>MyFlix (client-side) App</h2>
+        <img src="img/myflix-movies.png" class="work__myflixclient" alt="myflix_pic">
+        <p>
+          To build the client-side component of a "movies" web application based on the existing server-side database.
+          Users will be able to login, register, deregister, view and edit profile, add favorite movies, have access to
+          different movies, directors and genres information.
+          <a href="https://github.com/RinaOngOehme/myFlix-client/tree/myFlix-TEST" target="_blank" class="work__ref">See
+            project on
+            GitHub</a>
+        </p>
+
       </div>
       <div class="grid__item">
         <h2>Meet App</h2>
         <img src="img/meetapp.png" class="work__meetapp" alt="meetapp_pic">
-        <img src="img/meetapp2.png" class="work__meetapp2" alt="meetapp2_pic">
         <p>
           A serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique.
           The application uses the Google Calendar API to fetch upcoming events.
+          <a href="https://github.com/RinaOngOehme/meet" target="_blank" class="work__ref">See project on GitHub</a>
         </p>
-        <a href="https://github.com/RinaOngOehme/meet" target="_blank">See project on GitHub</a>
+        <a href="https://rinaongoehme.github.io/meet/" target="_blank" class="work__ref">See project Live in
+          Production</a>
         <p> </p>
-        <a href="https://rinaongoehme.github.io/meet/" target="_blank">See project Live in Production</a>
+
       </div>
       <div class="grid__item">
         <h2>Hello World Chat App</h2>
+        <img src="img/chatmsg.jpg" class="work__chatapp" alt="chatapp_pic">
         <p>
           A Chat App using React Native, Expo and Google Firestore Database so as to demonstrate the knowledge of
           JavaScript mobile development.
+          <a href="https://github.com/RinaOngOehme/hello-world" target="_blank" class="work__ref">See project on
+            GitHub</a>
         </p>
-        <a href="#">See project on GitHub</a>
+
       </div>
+      <div class="grid__item">
+        <h2>MyFlix Angular App</h2>
+        <img src="img/myFlix_angular.png" class="work__angularapp" alt="angularapp_pic">
+        <p>
+          To use Angular to build the client-side for an application called myFlix based on its existing server-side
+          code (REST API and database), with supporting documentation.
+          <a href="https://github.com/RinaOngOehme/myFlix-Angular-client" target="_blank" class="work__ref">See project
+            on
+            GitHub</a>
+        </p>
+        <a href="https://rinaongoehme.github.io/myFlix-Angular-client/welcome" target="_blank" class="work__ref">See
+          project Live in
+          Production</a>
+        <p> </p>
+
+      </div>
+
       <div class="grid__item">
         <h2>Next Challenge?</h2>
         <p>
           I am ready to support and learn on the job. In addition, be of value-add with my existing analytical and
-          project management skills.</p>
-        <a href="mailto:sotongli78uae@gmail.com">Contact me</a>
+          project management skills.
+          <a href="mailto:sotongli78uae@gmail.com" target="_blank">Contact me</a>
+        </p>
       </div>
-      <!-- Grid items will live here -->
+
     </div>
   </section>
   <br>
+  <!-- Footer -->
   <footer class="page-footer">
-    <h3>Find me on</h3>
+    <h3 class="footer_findme">Find me on</h3>
     <div class="social-media">
       <!-- Github logo -->
-      <a href="https://github.com/RinaOngOehme/"><img src="img/github_icon.svg" alt="github" width="30" height="30"></a>
-      <!-- LinkedIn logo -->
-      <a href="https://www.linkedin.com/in/rina-ong-oehme/"><img src="img/linkedin_icon.svg" alt="linkedin" width="30"
+      <a href="https://github.com/RinaOngOehme/" target="_blank"><img src="img/github_icon.svg" alt="github" width="30"
           height="30"></a>
+      <!-- LinkedIn logo -->
+      <a href="https://www.linkedin.com/in/rina-ong-oehme/" target="_blank"><img src="img/linkedin_icon.svg"
+          alt="linkedin" width="30" height="30"></a>
     </div>
   </footer>
-  <script src="js/tota11y.min.js"></script>
+  <script></script>
 </body>
 
 </html>
