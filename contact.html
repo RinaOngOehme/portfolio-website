@@ -5,20 +5,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rina Ong-Oehme - Contact</title>
-  <link rel="shortcut icon" href="img/favicon2.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&display=swap" rel="stylesheet">
+  <!--<link rel="stylesheet" type="text/css" href="css/styles.css">-->
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
 
 <body>
   <div>
     <header class="page-header">
-      <!-- Add your logo here -->
-      <img src="img/rinaongoehme_logo.svg" alt="Personal logo of Rina Ong-Oehme,
+      <!-- Personal Logo -->
+      <img src="img/rinaongoehme_logo.png" alt="Personal logo of Rina Ong-Oehme,
       a text logo in uppercase and lowercase letters that consists of my name" width="200" height="65"
         class="page-header__item">
+      <!-- Navbar -->
       <div class="navigation__menu">
         <nav class="main-navigation page-header__item">
           <ul role="menubar" class="navigation-list">
@@ -42,29 +44,29 @@
     </header>
   </div>
 
-
-
-
   <div class="contact__header">
     <h1>Contact</h1><br>
-
-  </div>
-  <img src="img/inbox.jpg" class="contact__inbox" alt="inbox_pic">
-  <div class="contact__info">
-    Email:<br>
-    <a href="sotongli78@gmail.com">Europe/Asia</a><br>
-    <a href="sotongli78uae@gmail.com">Middle-East</a><br>
-    <br>
-    LinkedIn: <a href="https://www.linkedin.com/in/rina-ong-oehme/">Rina Ong-Oehme</a><br>
   </div>
 
-  <br>
   <div class="contact__contactme">
-    <!-- Replace img with button -->
-    <a href="mailto:sotongli78uae@gmail.com" class="contactmebutton">Contact Me</a>
+    <!-- Email Me button -->
+    <a href="mailto:sotongli78uae@gmail.com" target="_blank" class="contactmebutton">Just Email Me!</a>
   </div>
+  <!-- LinkedIn path -->
+  <div class="contact__linkedin">
+    LinkedIn: <a href="https://www.linkedin.com/in/rina-ong-oehme/" target="_blank">Rina Ong-Oehme</a>
+  </div>
+  <!--Write Picture -->
+  <div class="contact__info">
+    <img src="img/contact.jpg" class="contact__writer" alt="writer_pic">
+  </div>
+
+
+
+  <!-- Contact Form -->
   <div class="contact__form">
-    <form action="mailto:sotongli78uae@gmail.com" method="post" id="contact-form">
+    <p class="form__message">If you would like to fill in a contact form:</p>
+    <form action="mailto:sotongli78uae@gmail.com" target="_blank" method="post" id="contact-form">
       <label class="label_standard" for="salutation">Salutation:</label><br>
       <select name="salutation" id="salutation">
         <option value="dr">Dr</option>
@@ -82,23 +84,24 @@
       <input type="tel" id="telephone" name="telephone"><br>
       <label class="label_standard" for="message">Message:</label><br>
       <textarea id="message" name="message" rows="10" cols="40" maxlength="240" required></textarea><br>
-      <br>
+
       <button type="submit">Submit</button>
     </form>
   </div>
-
+  <!-- Footer -->
   <footer class="page-footer">
-    <h3>Find me on</h3>
+    <h3 class="footer_findme">Find me on</h3>
     <div class="social-media">
       <!-- Github logo -->
-      <a href="https://github.com/RinaOngOehme/"><img src="img/github_icon.svg" alt="github" width="30" height="30"></a>
-      <!-- LinkedIn logo -->
-      <a href="https://www.linkedin.com/in/rina-ong-oehme/"><img src="img/linkedin_icon.svg" alt="linkedin" width="30"
+      <a href="https://github.com/RinaOngOehme/" target="_blank"><img src="img/github_icon.svg" alt="github" width="30"
           height="30"></a>
+      <!-- LinkedIn logo -->
+      <a href="https://www.linkedin.com/in/rina-ong-oehme/" target="_blank"><img src="img/linkedin_icon.svg"
+          alt="linkedin" width="30" height="30"></a>
     </div>
   </footer>
 
-  <script src="js/tota11y.min.js"></script>
+  <script></script>
 </body>
 
 
