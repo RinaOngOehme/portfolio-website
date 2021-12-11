@@ -5,20 +5,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rina Ong-Oehme Portfolio</title>
-  <link rel="shortcut icon" href="img/favicon2.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" type="text/css" href="css/styles.css">-->
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
 
 <body>
   <div>
     <header class="page-header">
-      <!-- Add your logo here -->
-      <img src="img/rinaongoehme_logo.svg" alt="Personal logo of Rina Ong-Oehme,
+      <!-- Personal Logo -->
+      <img src="img/rinaongoehme_logo.png" alt="Personal logo of Rina Ong-Oehme,
       a text logo in uppercase and lowercase letters that consists of my name" width="200" height="65"
         class="page-header__item">
+      <!-- Navbar -->
       <div class="navigation__menu">
         <nav class="main-navigation page-header__item">
           <ul role="menubar" class="navigation-list">
@@ -39,39 +41,52 @@
         </nav>
       </div>
     </header>
-  </div>
-  <div class="profile__wallpaper">
 
-    <div class="profile">
-      <!-- Add your Portrait image here -->
-      <div>
-        <h1 class="profile_greeting">CURIOUS . AGILE . RESPONSIVE</h1>
-        <p class="profile__name">Hello, I am Rina Ong-Oehme.</p>
-        <img src="img/rinaongoehme_pic.jpg" class="profile__portrait" alt="rinaongoehme_pic">
+    <div>
+      <img src="img/workanywhere.jpg" class="profile__workanywhere" alt="workanywhere_pic">
+      <!--Homepage Greetings-->
+      <div class="home__block">
 
-      </div>
-      <div>
-        <p class="profile__description">I am a <span class="profile__description--active">&lt;budding&gt;</span> web
-          developer aspiring to work remotely.</p>
+        <h1 class="profile__greeting">Rina says <span class="wave">👋</span> Hello! Guten Tag! Ni Hao! </h1>
+        <p class="profile__description">&#9883; Aspiration: I am a <span
+            class="profile__description--active">&lt;budding&gt;</span> web developer aspiring to work remotely.
+        </p>
+        <p class="profile__description">&#9883; Work: I want to build websites so that I can support business owners
+          to launch their Minimum Viable Product.
+        </p>
+        <p class="profile__description">&#9883; Motivation: Curiosity is the driver of my motivation.</p>
 
-        <img src="img/workanywhere.jpg" class="profile__workanywhere" alt="workanywhere_pic">
-        <a href="https://github.com/RinaOngOehme/" class="profile__codes">Check out some of my codes</a>
+        <a href="https://github.com/RinaOngOehme/" target="_blank" class="profile__codes">Check out some of my codes</a>
 
       </div>
     </div>
-  </div>
-
-  <footer class="page-footer">
-    <h3>Find me on</h3>
-    <div class="social-media">
-      <!-- Github logo -->
-      <a href="https://github.com/RinaOngOehme/"><img src="img/github_icon.svg" alt="github" width="30" height="30"></a>
-      <!-- LinkedIn logo -->
-      <a href="https://www.linkedin.com/in/rina-ong-oehme/"><img src="img/linkedin_icon.svg" alt="linkedin" width="30"
-          height="30"></a>
+    <br>
+    <!--Main Countries-->
+    <div class="content">
+      <div class="slider-wrapper">
+        My Major Country Footprints:
+        <div class="slider">
+          <div class="slider-text1">Singapore</div>
+          <div class="slider-text2">Australia</div>
+          <div class="slider-text3">Germany</div>
+          <div class="slider-text4">Switzerland</div>
+          <div class="slider-text5">United Arab of Emirates</div>
+        </div>
+      </div>
     </div>
-  </footer>
-  <script src="js/tota11y.min.js"></script>
+    <!-- Footer -->
+    <footer class="page-footer">
+      <h3 class="footer_findme">Find me on</h3>
+      <div class="social-media">
+        <!-- Github logo -->
+        <a href="https://github.com/RinaOngOehme/" target="_blank"><img src="img/github_icon.svg" alt="github"
+            width="30" height="30"></a>
+        <!-- LinkedIn logo -->
+        <a href="https://www.linkedin.com/in/rina-ong-oehme/" target="_blank"><img src="img/linkedin_icon.svg"
+            alt="linkedin" width="30" height="30"></a>
+      </div>
+    </footer>
+    <script></script>
 </body>
 
 </html>
