@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #317fbb;
+  --primary-color: orange;
   --secondary-color: #6f6f6e;
   --black: #252f47;
   --white: #fff;
@@ -11,7 +11,7 @@
   --h1font-size: 22px;
   --standardfont-weight: 700;
   --standardfont-size: 16px;
-  --font-family: 'Lato', san serif;
+  --font-family: 'Inconsolata', 'Consolas';
   --standardline-height: 1.6;
 }
 
@@ -19,7 +19,7 @@
   box-sizing: border-box;
 }
 
-body {
+body {  
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
@@ -34,11 +34,10 @@ header {
 }
 
 .page-header {
-  background-color: rgb(222, 230, 240);
+  background-color: whitesmoke;
   display: flex;
   width: 100%;
-  padding: 20px;
-  
+  padding: 10px;  
 }
 
 .page-header__item {
@@ -51,11 +50,16 @@ header {
   text-align: right;
 }
 
+.footer_findme{
+margin-left: 5px;
+}
 .page-footer {
+  background-color: whitesmoke;
+  color: var(--primary-color);
   clear: both;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: center;  
   }
 
 .navigation__menu {
@@ -88,95 +92,214 @@ header {
   padding: 10px;
 }
 
-.about__description {
-  justify-content: center;
-  max-width: 600px;
-  margin: 0 auto;
+.about__description, .about__skills {  
+  align-items: center;
+  margin-left: 20px; 
+  font-size: 20px;
   padding: 10px;
+  display: flexbox;
+  text-align: justify;
 }
 
-.about__sgpic {
+
+h3{
+ margin-left: 500px;
+}
+
+
+.content {
+  background-color: white;
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-wrapper {
+  font-size: 25px;
+  color:black;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left:10px;
+}
+
+.slider{
+  height: 50px;
+  padding-left:15px;
+  overflow: hidden;
+}
+
+.slider div {
+  color:#fff;
+  height: 50px;
+  margin-bottom: 50px;
+  padding: 2px 15px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.slider-text1 {
+  background: orange;
+  animation: slide 12s linear infinite;
+}
+
+.slider-text2, .slider-text4 {
+  background: black;  
+}
+
+.slider-text3, .slider-text5 {
+  background: orange;  
+}
+  
+
+@keyframes slide {
+  0% {margin-top: 0px;} 
+  20% {margin-top:-150px;}   
+  40% {margin-top:-300px;}
+  60% {margin-top:-450px;}  
+  80% {margin-top:-500px;} 
+  100% {margin-top:-650px;}
+}
+
+.contact__linkedin{
+  display: flex;
+  text-decoration: none;
+  padding: 5px;  
+  margin-left: 200px;
+}
+
+.about__reflinkedin{
+  background-color:var(--primary-color);
+  font-weight: var(--standardfont-weight);
+  font-family: var(--font-family);
+  color: white;
+  font-size: 20px;
+  line-height: var(--standardline-height);
+  padding: 10px;
+  border-radius: 85px 85px;
+  text-decoration: none;
+  display: flexbox;
+  margin-left: 25px;
+}
+
+.about__memories {
   display: flex;
   max-width: 600px;
   margin: 0 auto;
   padding: 10px;
+  width: 50%;
+  background-size: cover;
+  float: center;
+  position: relative;
+  border-radius: 85px 85px;
+  padding: 10px;
 }
 
-.profile {
-  background-color: #f4f4f4;
-  background-size: auto;
-  max-width: 600px;
-  margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.wave {
+  background-color: white;
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
 }
 
 
-.profile_greeting {
-  /* class selector */
-  align-items: flex-end;
+
+.profile__greeting {
   font-family: var(--font-family);
   line-height: var(--standardline-height);
-  padding-top: 10px;
-  margin-left: 200px;
-  color: var(--primary-color);
+  color: midnightblue;
   font-weight: bolder;
-  margin-left: 140px;;
-  text-shadow: 0 0 20px var(--primary-color);;
+  text-shadow: 0 0 20px orange;
+  position: relative;
+  text-align:left; 
 }
 
-.profile__wallpaper {
-  background-color: #f4f4f4;  
+
+.home__block {
+ display: inline;
+ padding: 20px; 
+ text-align: justify;
+ align-items: center;
 }
 
 .profile__workanywhere {
-  margin-left: 150px;
-  width: 50%;
-  display: flex;
-  border-radius: 100%;
-  padding: 10px;
-  position: relative;
-  }
+ width: 50%;
+ background-size: cover;
+ float: left;
+ display: flex;
+ border-radius: 85px 85px;
+ padding: 10px;
+ margin-left: 30px;
+ }
 
 .profile__portrait { 
-  display: flex;
-  width: 50%;
-  margin-left: 150px;
-  border-radius: 100%;
+  float: right;
+  width: 20%;
+  margin-left:20px;
+  margin-right: 20px;
+  border-radius: 15%;
+  background-color: lightgrey;
   padding: 10px;
   position: relative;
   }
+  
 
 .profile__name {
-  /* class selector */
   font-family: var(--font-family);
   font-weight: var(--standardfont-weight);
-  font-size: var(--standardfont-size);
+  font-size: 20px;
   line-height: var(--standardline-height);
-  justify-content: center;
-  padding-bottom: 10px;
-  margin-left: 200px;
+  align-items: center;  
+  margin-left: 10px;
 }
 
 .profile__description {
-  /* class selector */
   font-family: var(--font-family);
-  font-weight: var(--standardfont-weight);
-  font-size: var(--standardfont-size);
+  font-size: 20px;
   line-height: var(--standardline-height);
-  padding-bottom: 10px;
-  margin-left: 110px;
+  align-items: center;
+  margin-left: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  display: block;
+}
+
+.profile__description--active {
+  font-size: 20px;
+  background-color: orange;
+  color:midnightblue;
+  border-radius: 85px 85px;
+  font-weight: bold; 
 }
 
 .profile__codes {
-  /* class selector */
-  font-family: var(--font-family);
-  font-weight: var(--standardfont-weight);
-  font-size: var(--standardfont-size);
-  line-height: var(--standardline-height);
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  margin-left: 200px;
+  background-color: rgb(236, 192, 125); 
+  font-size: 20px;  
+  padding: 5px;
+  border-radius: 85px 85px;
+  text-decoration: none;
+  margin-left: 5px;   
+}
+
+.social-media{
+  background-color: whitesmoke; 
 }
 
 .work__header {
@@ -186,77 +309,17 @@ header {
   padding: 10px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 500px 500px 500px;
-  padding: 20px;
-}
-
-.cell-A {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.cell-B {
-  grid-column: 3;
-  grid-row: 1;
-}
-
-.cell-C {
-  grid-column: 1;
-  grid-row: 3;
-}
-
-.cell-D {
-  grid-column: 3;
-  grid-row: 3;
-}
-
-/* start grid fallback */
-.grid__item {
-  background-color: var(--lgrey);
-  width: auto;
-  min-height: auto;
-  margin: 0;
-  padding: 15px;
-}
-
-/* end grid fallback */
-@supports (display: grid) {
-  .grid {
-    display: grid;
-
-    /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 15px;
-    margin: 0;
-  }
-
-  .grid__item {
-    background-color: var(--lgrey);
-    width: auto;
-    min-height: auto;
-    margin: 0;
-    padding: 15px;
-  }
-
-  h1 {
-    font-size: var(--h1font-size);
-    font-weight: var(--standardfont-weight);
-  }
-}
 
 a {
   color: var(--secondary-color);
   font-weight: bolder;
-
-  /* Sets color for link */
+    /* Sets color for link */
 }
 
 a:visited {
   /* visited link color */
-  color: var(--primary-color);
+  color: midnightblue;
+  font-size: 20px;
 }
 
 a:hover,
@@ -267,43 +330,41 @@ a:focus {
 
 a:active {
   /* selected link */
-  color: var(--lgrey);
+  color: black;
+  font-size: 20px;
 }
 
 
-
-.cvdownload__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.downloadbutton {
-  border: none;
-  display: inline-block;
-  font-family: var(--font-family);
-  background-color: var(--primary-color);
-  color: var(--white);
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  transition: 0.2s opacity;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-
-.contactmebutton {
-  border: none;
-  display: inline-block;
+.contactmebutton { 
   color: var(--white);
   font-family: var(--font-family);
   background-color: var(--primary-color);
   text-decoration: none;
-  padding: 10px;
+  padding: 5px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  font-size: 20px;  
+}
+
+.contactmebutton:hover{
+  animation-name: wiggle;
+  animation-name: wiggle;
+  animation-duration: 700ms;
+  animation-duration: 700ms;
+  animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes wiggle {
+  0% {transform: rotate(10deg);}
+  25% {transform: rotate(-10deg);}
+  50% {transform: rotate(20deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
 }
 
 button {
@@ -340,40 +401,8 @@ button:focus,
   opacity: 0.8;
 }
 
-
-
-.table__section {
-  width: 400px;
-  margin: 0 auto;
-  padding: 10px;
-  justify-content: center;
-}
-
-.table__experience {
-  border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 0.9em;
-  font-family: var(--font-family);
-  width: 400px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  padding: 10px;
-}
-
-.table_head {
-  background-color: var(--secondary-color);
-  color: var(--white);
-  text-align: center;
-  padding: 10px;
- }
-
- .table__body{
-  padding: 10px;
-  text-align: center;
-  justify-content: center;
- }
-
 .contact__header {
+  margin: auto;
   display: flex;
   background-size: auto;
   max-width: 500px;
@@ -381,47 +410,44 @@ button:focus,
   padding: 5px; 
 }
 
-.contact__info {
-  background-size: auto;
-  justify-content: center;
-  display: flexbox;
-  margin-left: 200px;
-  padding: 5px;
-  max-width: 300px;
-  
-}
 
-.contact__inbox {
-  background-color: var(--secondary-color);
-  margin-right: 40px;
+.contact__writer {
   width: 50%;
-  float: right;
-  border-radius: 100%;
-  padding: 5px;
+  background-size: cover;
+  float: left;
+  display: flex;
+  border-radius: 85px 85px;
+  padding: 15px;
+  margin-left: 150px;
   }
 
 .contact__contactme {
   display: flex;
-  justify-content: center;
-  margin-left: 20px;
   padding: 5px;
-  max-width: 450px;
+  margin-left: 200px;
+  
+
 }
 
 .contact__form {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
+  display: inline-block;
+  justify-content: center;  
+  width: 320px;
+  margin-bottom: 50px;
   padding: 10px;
-  min-width: 320px;
+  margin-left: 30px;
+}
+
+.form__message{  
+  display: inline-block;
+  justify-content: center; 
 }
 
 span {
   /* styles the font of the span seen on index */
-  font-family: sans-serif;
+  font-family: 'Roboto';
   font-size: 14px;
   font-weight: 500;
-
   /* styles the background color, font color, and text decoration (underline, etc.) of the span seen on index */
   background-color: var(--black);
   color: var(--orange);
@@ -429,69 +455,84 @@ span {
   padding: 3px;
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;   
+  padding: 20px;
 }
 
-@media all and (max-width: 500px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
 
-@media all and (max-width: 750px) {
+@supports (display: grid) {
   .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); 
+    /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */   
     grid-gap: 10px;
+    margin-bottom: 20px;
+    margin-left:15px;
+    padding: 10px;
   }
 
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
+  .grid__item {   
+    background-image: linear-gradient(whitesmoke, rgb(250, 190, 60));
+    border-radius: 25px;
+    width: 450px;
+    height: 600px;
+    margin-bottom: 10px;
+    padding: 20px;
   }
 
+  h1 {
+    font-size: var(--h1font-size);
+    font-weight: var(--standardfont-weight);
+  }
+}
+
+
+
+@media all and (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;   
+  }
   h1 {
     font-size: var(--h1font-size);
   }
 }
 
-.work__pokedex  {
+
+.work__description{
+  font-weight: bold;
+  font-size:20px;
+  display: inline-block;
+  padding: 5px;
+  margin-left: 40px;
+}
+
+.work__pokedex, .work__todolist, .work__myflixserver, .work__myflixclient, .work__meetapp, .work__chatapp, .work__angularapp, .work__portfolio{
+  padding: 5px;
+  background-color: midnightblue;
+  border-radius: 15%;
   float: center ;
   width: 70%;
+  height: 45%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-start; 
+  text-align: justify;
+  
+}
+
+.work__ref{
+  margin-bottom: 20px;
+  display: inline-block
+
+}
+
+
+
  
-}
 
-.work__todolist {
-  float: center ;
-  width: 70%;
-  display: flex;
-  justify-content: flex-start;
-  padding-bottom: 10px;
-}
 
-.work__myflix {
-  float: center ;
-  width: 50%;
-  display: flex;
-  justify-content: flex-start;
-  padding-bottom: 10px;
-}
 
-.work__meetapp {
-  float: center ;
-  width: 50%;
-  display: flex;
-  justify-content: flex-start;
-  
-}
 
-.work__meetapp2 {
-  float: center ;
-  width: 50%;
-  display: flex;
-  justify-content: flex-start;
-  
-}
+
+
