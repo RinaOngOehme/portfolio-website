@@ -18,6 +18,6 @@ To introduce myself and showcase the projects that I have completed through the 
 * Mentor: Treasure Kabareebe
 * Tutor: Matthew Wacha
 * Unsplash Photos Contributors:
-Madara Parma
-Kevin Bhagat
+Madara Parma,
+Kevin Bhagat,
 Kari Shea
