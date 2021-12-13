@@ -19,5 +19,4 @@ To introduce myself and showcase the projects that I have completed through the 
 * Tutor: Matthew Wacha
 * Unsplash Photos Contributors:
 Madara Parma,
-Kevin Bhagat,
 Kari Shea
