@@ -240,13 +240,14 @@ h3{
 }
 
 .profile__workanywhere {
- width: 50%;
+ width: 38%;
  background-size: cover;
  float: left;
  display: flex;
  border-radius: 85px 85px;
  padding: 10px;
  margin-left: 30px;
+ margin-top: 25px;
  }
 
 .profile__portrait { 
@@ -291,8 +292,8 @@ h3{
 
 .profile__codes {
   background-color: rgb(236, 192, 125); 
-  font-size: 20px;  
-  padding: 5px;
+  font-size: 25px;  
+  padding: 20px;
   border-radius: 85px 85px;
   text-decoration: none;
   margin-left: 5px;   
@@ -449,10 +450,12 @@ span {
   font-size: 14px;
   font-weight: 500;
   /* styles the background color, font color, and text decoration (underline, etc.) of the span seen on index */
-  background-color: var(--black);
+  background-color: midnightblue;
   color: var(--orange);
   text-decoration: none;
-  padding: 3px;
+  padding: 8px;
+  display: inline-block;
+  margin: 5px; 
 }
 
 .grid {
