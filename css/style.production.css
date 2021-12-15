@@ -47,7 +47,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 10px;  
+  padding: 10px;
+  
 }
 
 .page-header__item {
@@ -55,6 +56,7 @@ header {
       -ms-flex: 0 1 100px;
           flex: 0 1 100px;
   margin-left: 40px;
+  
 }
 
 .page-header__item:last-child {
@@ -134,13 +136,11 @@ h3{
 }
 
 
-.content {
+.content {  
   background-color: white;
-  width: 100vw;
+  width: 60%;
   height: 15vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -149,27 +149,26 @@ h3{
           justify-content: center;
 }
 
-.slider-wrapper {
+.slider-wrapper {  
+  margin-left: 150px;
   font-size: 25px;
   color:black;
   font-weight: bold;
   text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  margin-left:10px;
+          justify-content: center;         
 }
 
 .slider{
   height: 50px;
-  padding-left:15px;
+  padding-right:20px;
   overflow: hidden;
+  
 }
 
 .slider div {
@@ -372,10 +371,11 @@ h3{
 .profile__codes {
   background-color: rgb(236, 192, 125); 
   font-size: 25px;  
-  padding: 20px;
+  padding: 15px;
   border-radius: 85px 85px;
   text-decoration: none;
-  margin-left: 5px;   
+  margin-left: 50px;   
+  display: inline-block;
 }
 
 .social-media{
