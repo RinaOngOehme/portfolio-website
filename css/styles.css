@@ -43,6 +43,7 @@ header {
 .page-header__item {
   flex: 0 1 100px;
   margin-left: 40px;
+  
 }
 
 .page-header__item:last-child {
@@ -109,27 +110,28 @@ h3{
 
 .content {
   background-color: white;
-  width: 100vw;
+  width: 60%;
   height: 15vh;
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
 }
 
 .slider-wrapper {
+  margin-left: 150px;
   font-size: 25px;
   color:black;
   font-weight: bold;
   text-transform: uppercase;
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
-  margin-left:10px;
+  margin-left:20px;
 }
 
 .slider{
   height: 50px;
-  padding-left:15px;
+  padding-right:20px;
   overflow: hidden;
 }
 
@@ -296,7 +298,8 @@ h3{
   padding: 20px;
   border-radius: 85px 85px;
   text-decoration: none;
-  margin-left: 5px;   
+  margin-left: 50px;  
+  display: inline-block; 
 }
 
 .social-media{
