@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--<link rel="stylesheet" type="text/css" href="css/styles.css">-->
   <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
@@ -22,7 +23,12 @@
           class="page-header__item"></a>
       <!-- Navbar -->
       <div class="navigation__menu">
-        <nav class="main-navigation page-header__item">
+        <nav class="main-navigation">
+
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+
           <ul role="menubar" class="navigation-list">
             <li role="presentation">
               <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
